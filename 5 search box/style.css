@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+
+:root{
+    --primary-color:#f2726a;
+    --pink-color:#e26e70;
+}
+*{
+    /* reset css ==>> chay tren cac trinh duyet khong co su thay doi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 10px solid black; */
+}
+
+body{
+    height: 100vh; 
+    overflow: hidden;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #4daf54, #3d8880);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box{
+    background: black;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    /* all : tat ca thuoc tinh chieu cao chieu rong deu transition het  */
+}
+.search-box__input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    padding: 20px 100px 20px 20px;
+    font-size: 25px;
+    outline: none;
+}
+.search-box__btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+.search-box.open{
+    width: 400px;
+}

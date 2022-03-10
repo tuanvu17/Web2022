@@ -94,12 +94,11 @@ img{
     /* auto tuc la tu nhan su kien do */
     transform:scale(1);
     /* cho ve 1, de thay hien tuong toa ra */
-
 }
 .hide{
     display: none;
 }
 
-.close, .prev, .next{
+.image, .close, .prev, .next{
     cursor: pointer;
 }
