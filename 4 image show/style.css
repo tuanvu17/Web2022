@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+
+:root{
+    --primary-color:#f2726a;
+    --pink-color:#e26e70;
+}
+*{
+    /* reset css ==>> chay tren cac trinh duyet khong co su thay doi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 10px solid black; */
+}
+
+body{
+    height: 100vh; 
+    overflow: hidden;
+    font-family: sans-serif;
+    background: #dadada;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* vi image nos chuyen dong, ne transition cho no */
+    transition: 0.2s;
+
+}
+.image{
+    width: 22%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+/* Neu minh hover vao image thi thang img se scale la .... */
+.image:hover img{
+    transform: scale(1.2);
+}
+.gallery{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgb(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    pointer-events: none; 
+    /* khi anh co opacity = 0, ta thuong them su kien con tro chuot */
+    transform:scale(0.8);
+    transition: 0.5s;
+}
+.gallery__inner {
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+}
+.close{
+    position:fixed;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+}
+.control{
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute; 
+    /* tuan theo thang lop phu  */
+}
+.control.prev{
+    left: 15px;
+}
+
+.control.next{
+    right: 15px;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+    /* auto tuc la tu nhan su kien do */
+    transform:scale(1);
+    /* cho ve 1, de thay hien tuong toa ra */
+
+}
+.hide{
+    display: none;
+}
+
+.close, .prev, .next{
+    cursor: pointer;
+}
