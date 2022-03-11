@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+
+:root{
+    --primary-color:#8cc84c;
+    --pink-color:#e26e70;
+}
+*{
+    /* reset css ==>> chay tren cac trinh duyet khong co su thay doi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 10px solid black; */
+}
+
+body{
+    height: 100vh; 
+    overflow: hidden;
+    font-family: sans-serif;
+    background: #80c84c;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.content{
+    border: 1px solid #888;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin-top:20px;
+
+}
+
+.content li{
+    background:var(--primary-color);
+    color:white;
+    border-radius: 3px;
+    list-style: none;
+    margin: 4px 3px;
+    padding: 5px;
+    
+}
+.content li i{
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+.content input{
+    border: none;
+    font-size: 20px;
+    outline: none;
+    margin: 10px 3px;
+    flex: 1;
+}
+.remove-all{
+    background:var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.remove-all:hover{
+    background: green;
+}
