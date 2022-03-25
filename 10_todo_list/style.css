@@ -24,7 +24,7 @@ body{
     width: 400px;
     margin: 100px auto;
     background: white;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ body{
     transition: 0.3s;
 }
 .container:hover{
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     /* do bong 4 phia */
 }
 form{

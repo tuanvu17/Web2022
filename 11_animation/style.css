@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+
+:root{
+    --success:rgb(0,128,0);
+    --warning:rgb(240, 190, 26);
+    --error:rgb(241, 77, 12);;  
+
+    --success-light:rgba(0,128,0,0.4);
+    --warning-light:rgba(233, 201, 98, 0.4);
+    --error-light:rgba(241, 77, 12,0.4);
+}
+*{
+    /* reset css ==>> chay tren cac trinh duyet khong co su thay doi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 10px solid black; */
+}
+
+body{
+    height: 100vh; 
+    font-family: "Poppins";
+    background: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control button{
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 10px;
+}
+#toasts{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+}
+.success{
+    background: var(--success);
+}
+
+.warning{
+    background: var(--warning);
+}
+
+.error{
+    background: var(--error);
+}
+.toast{
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    border-left: 6px solid var(--success);
+    /* hieu ung animation phai co chieu rong va chieu dai */
+    /* border-bottom: 4px solid var(--success); */
+    overflow: hidden;
+    animation: slide_show 2s ease forwards;
+    margin-bottom: 10px;
+
+}
+.toast .countdown {
+    background: var(--success);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    animation: countdown 2s ease forwards;
+    /* forwards : la trang thai cuoi cung cua the nhan duoc */
+    /* border-radius: 40px; */
+}
+.toast i{
+    margin: 0 10px;
+}
+.toast.success{
+    border-left: 6px solid var(--success);
+    background: var(--success-light);
+
+}
+.toast.warning{
+    border-left: 6px solid var(--warning);
+    background: var(--warning-light);
+
+}
+.toast.error{
+    border-left: 6px solid var(--error);
+    background: var(--error-light);
+
+}
+.toast.success .countdown{
+    background: var(--success);
+}
+
+.toast.warning .countdown{
+    background: var(--warning);
+}
+
+.toast.error .countdown{
+    background: var(--error);
+}
+@keyframes countdown{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes slide_show{
+    /* thoi diem 0% thi no dang o vi tri nao */
+    0%{
+        transform: translateX(100%);
+    }
+    25%{
+        transform: translateX(-10%);
+    }
+    50%{
+        transform: translateX(0%);
+
+    }
+    /* forwards: trang thai cuoi cung cua 100% */
+    100%{
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes slide_hide{
+    /* thoi diem 0% thi no dang o vi tri nao */
+    0%{
+        transform: translateX(-10%);
+    }
+    25%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-20%);
+
+    }
+    /* forwards: trang thai cuoi cung cua 100% */
+    100%{
+        transform: translateX(200%);
+    }
+}
