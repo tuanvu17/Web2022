@@ -6,14 +6,16 @@ var nextBtn = document.querySelector('.next');
 var currentIndex = 0;
 
 function updateImageByIndex (index){
-
+    // lay ra ta ca cac anh
     var listImg = document.querySelectorAll('.list-image img');
+    // lay ra tat ca cac the div 
     document.querySelectorAll('.list-image div').forEach(item =>{
+        // remove class active khoi tat ca cac the
         item.classList.remove('active');
     })
-
     currentIndex = index;
     imgFeature.src = listImg[index].getAttribute('src');
+    // them class active vao the cha cua the img la the div bao quanh
     listImg[index].parentElement.classList.add('active');
 }
 
@@ -21,7 +23,8 @@ listImg.forEach((imgElement, index) =>{
     imgElement.addEventListener('click', e=>{
        // updateImageByIndex(index);
 
-        imgFeature.style.opacity = '0';
+        imgFeature.style.opacity = '0'; 
+        // dat thuoc tinh opacity ve 0, doi 1 khoang thoi gian thi cho anh hien len 1
         setTimeout(() => {
             updateImageByIndex(index);
             imgFeature.style.opacity = '1';
@@ -30,15 +33,16 @@ listImg.forEach((imgElement, index) =>{
 })
 
 prevBtn.addEventListener('click', e=>{
-    imgFeature.style.animation = '';
     if(currentIndex == 0){
         currentIndex = listImg.length -1;
     }else{
         currentIndex --;
     }
+    imgFeature.style.animation = '';
     setTimeout(() => {
         updateImageByIndex(currentIndex);
         imgFeature.style.animation = 'slideLeft 1s ease-in-out forwards';
+        // truot tu trai sang
     }, 200);
 })
 
@@ -55,5 +59,7 @@ nextBtn.addEventListener('click', e=>{
     }, 200);
 })
 updateImageByIndex(0);
+
+
 
 

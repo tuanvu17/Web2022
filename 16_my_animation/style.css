@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+
+:root{
+    --success:rgb(0,128,0);
+    --warning:rgb(240, 190, 26);
+    --error:rgb(241, 77, 12);;  
+
+    --success-light:rgba(0,128,0,0.4);
+    --warning-light:rgba(233, 201, 98, 0.4);
+    --error-light:rgba(241, 77, 12,0.4);
+}
+*{
+    /* reset css ==>> chay tren cac trinh duyet khong co su thay doi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body{
+    height: 100vh; 
+    font-family: sans-serif;
+    background: #dadada;
+}
+
+section{
+    height: 100vh;
+}
+
+#home{
+    background: linear-gradient(to right, #4daf54, #3d8880);
+    color: white;
+    padding: 100px;
+}
+#home  h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#home .description{
+    font-size:20px;
+    justify-self: center;
+}
+#about{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.box{
+    background: #242628;
+    padding: 20px;
+    color: white;
+    margin: 40px 20px;
+    height: 250px;
+    border-radius:10px
+}
+.box .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#team{
+    background: linear-gradient(180deg,#017c2c 50%, #fff 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.member{
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 500px;
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+.member .name{
+    color: #017c2c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.left-to-right{
+    transform: translateX(-150%);
+    transition: 1s;
+}
+
+.left-to-right.start{
+    transform: translateX(0);
+}
+
+.right-to-left{
+    transform: translateX(150%);
+    transition: 1s;
+}
+
+.right-to-left.start{
+    transform: translateX(0);
+}
+.zoom{
+    transform: scale(0);
+    transition: 2s;
+}
+
+.zoom.start{
+    transform: scale(1);
+}
