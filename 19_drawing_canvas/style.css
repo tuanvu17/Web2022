@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+
+:root{
+    --success:rgb(0,128,0);
+    --warning:rgb(240, 190, 26);
+    --error:rgb(241, 77, 12);;  
+
+    --success-light:rgba(0,128,0,0.4);
+    --warning-light:rgba(233, 201, 98, 0.4);
+    --error-light:rgba(241, 77, 12,0.4);
+}
+*{
+    /* reset css ==>> chay tren cac trinh duyet khong co su thay doi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body{
+    height: 100vh; 
+    font-family: sans-serif;
+    background: linear-gradient(130deg, rgb(189,79,180), rgb(116,57,166));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width:200px;
+    height: 200px;   
+    border: 2px solid black;
+    background: white;
+    margin: 10px;
+}
+.target{
+    width: 100%;
+    height: 100%;
+    background: url(./images/1.jpg);
+}
+.dragging{
+    border: 2px solid #ccc;
+}
