@@ -61,10 +61,12 @@
 }
 
 /*=============== BASE ===============*/
-* {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* border: 1px solid red; */
+
 }
 
 html {
@@ -193,7 +195,7 @@ body.light-theme {
 }
 
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 4.5rem 0 5rem;
 }
 
 .section__title,
@@ -277,7 +279,7 @@ body.light-theme {
 /*=============== HOME ===============*/
 .home__container {
   position: relative;
-  row-gap: 4.5rem;
+  row-gap: 4rem;
   padding-top: 2rem;
 }
 .home__data {
@@ -347,6 +349,7 @@ body.light-theme {
   background-color: var(--first-color);
   color: #fff;
 }
+
 .home__social::after {
   content: "";
   width: 32px;
@@ -354,6 +357,7 @@ body.light-theme {
   background-color: var(--first-color);
   transform: rotate(90deg) translate(16px, 3px);
 }
+
 .home__scroll {
   color: var(--first-color);
   right: -1.5rem;
@@ -365,6 +369,7 @@ body.light-theme {
 .home__scroll-icon {
   font-size: 1.25rem;
 }
+
 .home__scroll-name {
   font-size: var(--smaller-font-size);
   transform: rotate(-90deg);
@@ -395,7 +400,7 @@ body.light-theme {
 }
 .about__img {
   width: 220px;
-  border-radius: 1.5ren;
+  border-radius: 1.5rem;
   justify-self: center;
 }
 .about__data {
@@ -435,7 +440,7 @@ body.light-theme {
 .skills__content {
   background-color: var(--container-color);
   padding: 1.5rem;
-  border-radius: 1.25rems;
+  border-radius: 1.25rem;
 }
 .skills__title {
   font-size: var(--normal-font-size);
@@ -474,8 +479,6 @@ body.light-theme {
 /*=============== SERVICES ===============*/
 .services__container {
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding-top: 1rem;
 }
 .services__card {
   background-color: var(--container-color);
@@ -580,6 +583,8 @@ body.light-theme {
   padding: 0.25rem 0.75rem;
   font-size: var(--font-medium);
   border-radius: 0.5rem;
+  border: 1px solid var(--first-color-alt)
+
 }
 .work__card {
   background-color: var(--container-color);
@@ -861,6 +866,7 @@ body.light-theme {
     margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 767px) {
   .work__container {
     grid-template-columns: repeat(2, max-content);
@@ -922,7 +928,7 @@ body.light-theme {
     padding: 1rem 1.25rem;
   }
   .about__description {
-    padding: 0 4rem 0 0;
+    padding: 1rem;
     margin-bottom: 0.8rem;
   }
   .skills__container {
