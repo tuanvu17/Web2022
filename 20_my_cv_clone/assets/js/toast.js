@@ -11,7 +11,7 @@ function toast({
         const autoRemoveId = setTimeout(function () {
             main.removeChild(toast);
         }, duration + 1000);
-        // Remove toast click
+        // Remove toast c   lick
         toast.onclick = function (e) {
             if (e.target.closest('.toast__close')) {
                 main.removeChild(toast);
@@ -39,7 +39,6 @@ function toast({
         main.appendChild(toast);
     }
 }
-
 
 function showSuccessToast() {
     toast({

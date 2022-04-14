@@ -11,6 +11,10 @@ function scrollHeader(){
 
 window.addEventListener('scroll', scrollHeader);
 
+/*=============== SERVICES MODAL ===============*/
+
+
+
 /*=============== LIGHT DARK THEME ===============*/
 const thememButton = document.getElementById('theme-button');
 const lightTheme = 'light-theme' //class ===
