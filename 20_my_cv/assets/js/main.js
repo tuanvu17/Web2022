@@ -15,6 +15,35 @@ window.addEventListener('scroll', scrollHeader);
 
 
 
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+console.log('%c [ sections ]-22', 'font-size:13px; background:pink; color:#bf2c9f;', sections)
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight
+         const   sectionTop = current.offsetTop - 58
+        const    sectionId = current.getAttribute('id')
+        console.log('%c [ sectionId ]-64', 'font-size:13px; background:pink; color:#bf2c9f;', sectionId)
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        } else {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+
+
+
+
+
 /*=============== LIGHT DARK THEME ===============*/
 const thememButton = document.getElementById('theme-button');
 const lightTheme = 'light-theme' //class ===
@@ -42,24 +71,4 @@ thememButton.addEventListener('click',()=>{
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCureentIcon());
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

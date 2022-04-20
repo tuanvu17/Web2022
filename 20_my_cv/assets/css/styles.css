@@ -248,6 +248,7 @@ body.light-theme{
 }
 .home__data{
   text-align: center;
+  animation: animation__home__data ease 1.5s forwards;
 }
 .home__greeting,
 .home__education{
@@ -282,6 +283,8 @@ body.light-theme{
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  animation: animation__home__handle ease 1s forwards;
+
 }
 .home__buttons{
   display: flex;
@@ -292,6 +295,8 @@ body.light-theme{
 .home__social,
 .home__scroll{
   position: absolute;
+  animation: animation__home__social ease 2s forwards;
+  
 }
 .home__social{
   left: 0;
@@ -873,4 +878,39 @@ body.light-theme{
   .contact__container {
     column-gap: 6rem;
   }
+}
+
+
+@keyframes animation__home__data {
+  from{
+      transform: translateY(calc(-30%));
+      opacity: 0;
+  }
+  to{
+    transform: translateY(calc(0%));
+    opacity: 1;
+}
+}
+
+
+@keyframes animation__home__handle {
+  from{
+      transform: translateY(calc(-20%));
+      opacity: 0;
+  }
+  to{
+    transform: translateY(calc(0%));
+    opacity: 1;
+}
+}
+
+@keyframes animation__home__social {
+  from{
+      transform: translateY(calc(30%));
+      opacity: 0;
+  }
+  to{
+    transform: translateY(calc(0%));
+    opacity: 1;
+}
 }
