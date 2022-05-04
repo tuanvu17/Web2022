@@ -16,6 +16,9 @@ module.exports = {
       },
       animation: {
         slideDown: 'slideDown .6s ease-in-out',
+      },
+      backgroundImage: {
+        'slider-bg':'url("./img/favicon/bg-coffee.jpg")'
       }
     },
   },

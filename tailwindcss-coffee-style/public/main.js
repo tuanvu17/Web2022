@@ -10,7 +10,7 @@ document.addEventListener('click', (e)=>{
    }else{
       if(topMenu.classList.contains('tqd-topmenu-expanded')){ 
          // kiem tra neu dang mo thi remove
-        topMenu.classList.remove('tqd-topmenu-expanded');
+         topMenu.classList.remove('tqd-topmenu-expanded');
          topMenu.classList.add('hidden');
       }
    }
