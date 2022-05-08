@@ -498,6 +498,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.75rem;
 }
 
+.left-\[ca\]{
+  left: ca;
+}
+
+.left-\[calc\]{
+  left: calc;
+}
+
+.left-\[calc\(\)\]{
+  left: calc();
+}
+
+.left-\[calc\(-50\)\]{
+  left: calc(-50);
+}
+
+.left-\[calc\(-50vc\)\]{
+  left: calc(-50vc);
+}
+
+.left-\[calc\(-50vw\+\)\]{
+  left: calc(-50vw + );
+}
+
+.left-\[calc\(-50vw\+50\)\]{
+  left: calc(-50vw + 50);
+}
+
+.left-\[calc\(-50vw\+50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -581,6 +613,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 130px;
 }
 
+.h-\[\]{
+  height: ;
+}
+
+.h-\[340px\]{
+  height: 340px;
+}
+
+.h-\[1000px\]{
+  height: 1000px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -605,6 +649,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[100px\]{
   width: 100px;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[100\]{
+  width: 100;
+}
+
+.w-\[100vw\]{
+  width: 100vw;
 }
 
 .max-w-screen-2xl{
@@ -764,8 +820,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./img/favicon/coffee-small-img-2.jpg');
 }
 
+.bg-\[url\(\'\.\/img\/favicon\/coffee-parallax-01\.jpg\'\)\]{
+  background-image: url('./img/favicon/coffee-parallax-01.jpg');
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
 }
 
 .bg-center{
