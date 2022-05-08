@@ -474,8 +474,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.bottom-4{
+  bottom: 1rem;
+}
+
+.left-1\/2{
+  left: 50%;
 }
 
 .mx-auto{
@@ -505,8 +525,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -539,6 +575,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2rem;
 }
 
+.w-\[65\%\]{
+  width: 65%;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
+.w-11\/12{
+  width: 91.666667%;
+}
+
+.w-\[95\%\]{
+  width: 95%;
+}
+
 .max-w-screen-2xl{
   max-width: 1536px;
 }
@@ -559,8 +611,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 16.666667%;
 }
 
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -581,6 +646,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .bg-orange-400{
@@ -604,6 +677,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\.\/img\/favicon\/bg-coffee3\.jpg\'\)\]{
   background-image: url('./img/favicon/bg-coffee3.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/favicon\/image1\.jpg\'\)\]{
+  background-image: url('./img/favicon/image1.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/favicon\/imag2\.jpg\'\)\]{
+  background-image: url('./img/favicon/imag2.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/favicon\/imag\.jpg\'\)\]{
+  background-image: url('./img/favicon/imag.jpg');
 }
 
 .bg-cover{
@@ -647,6 +732,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 8rem;
 }
 
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -688,6 +778,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-semibold{
@@ -737,6 +832,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-coffee-400{
   --tw-text-opacity: 1;
   color: rgb(162 95 75 / var(--tw-text-opacity));
+}
+
+.line-through{
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 
 /* tqd = trungquandev
@@ -857,6 +957,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.tqd-button{
+  cursor: pointer;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -900,9 +1014,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.after\:duration-300::after{
+.after\:duration-500::after{
   content: var(--tw-content);
-  transition-duration: 300ms;
+  transition-duration: 500ms;
 }
 
 .after\:ease-in-out::after{
@@ -910,19 +1024,76 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:bg-gray-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-opacity-10:hover{
+  --tw-bg-opacity: 0.1;
+}
+
 .hover\:text-coffee-600:hover{
   --tw-text-opacity: 1;
   color: rgb(116 72 56 / var(--tw-text-opacity));
+}
+
+.hover\:text-coffee-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(162 95 75 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-95:hover{
   opacity: 0.95;
 }
 
+.hover\:opacity-90:hover{
+  opacity: 0.9;
+}
+
+.hover\:transition-all:hover{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:ease-in-out:hover{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .after\:hover\:bg-coffee-400:hover::after{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(162 95 75 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:block{
+  display: block;
+}
+
+@-webkit-keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+.group:hover .group-hover\:animate-fadeIn{
+  -webkit-animation: fadeIn .4s ease-in-out;
+          animation: fadeIn .4s ease-in-out;
 }
 
 @media (min-width: 640px){
@@ -953,8 +1124,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .lg\:w-\[65\%\]{
+    width: 65%;
+  }
+
   .lg\:basis-1\/6{
     flex-basis: 16.666667%;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -971,6 +1150,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:gap-8{
     gap: 2rem;
+  }
+
+  .lg\:gap-4{
+    gap: 1rem;
   }
 
   .lg\:px-64{

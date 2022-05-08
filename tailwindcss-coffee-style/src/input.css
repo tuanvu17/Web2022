@@ -33,9 +33,13 @@
 }
 .tqd-subheadline-deco-line{
     @apply w-8 h-px bg-gray-200 
-    
 }
 .tqd-subheadline-label{
     @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center
+    
+}
+.tqd-button{
+    @apply text-center uppercase tracking-wider px-8 py-5 text-xs font-semibold cursor-pointer 
+                                            
     
 }
